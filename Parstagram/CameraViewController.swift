@@ -43,9 +43,10 @@ class CameraViewController: UIViewController,UINavigationControllerDelegate, UII
         dismiss(animated: true, completion: nil)
     }
     @IBAction func onSubmitButton(_ sender: Any) {
+        
         let post = PFObject(className: "Posts")
         
-        post["name"]=commentField.text
+        post["caption"]=commentField.text
         post["author"]=PFUser.current()
         
         let imageData=imageView.image!.pngData()
