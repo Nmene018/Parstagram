@@ -80,4 +80,3 @@ class CameraViewController: UIViewController,UINavigationControllerDelegate, UII
     }
     */
 
-
